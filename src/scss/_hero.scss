@@ -1,0 +1,16 @@
+@import '/variables';
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+
+    &__card {
+        padding: #{map-get($spacers, 3)} #{map-get($spacers, 2)};
+        text-align: center;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    }
+}

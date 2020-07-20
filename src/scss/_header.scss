@@ -1,0 +1,7 @@
+@import '/variables';
+
+header {
+    position: absolute;
+    top: #{map-get($spacers, 1)};
+    left: #{map-get($spacers, 1)};
+}

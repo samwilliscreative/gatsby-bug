@@ -1,0 +1,70 @@
+backend:
+  name: git-gateway
+  branch: master
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/index.md"
+        label: "Home"
+        name: "index"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+      - file: "src/pages/prices/index.md"
+        label: "Prices"
+        name: "prices"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "prices-page",
+            }
+  - name: "generalContent"
+    label: "General content"
+    files:
+      - file: "src/data/header.md"
+        label: "Header"
+        name: "header"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "header",
+            }
+      - file: "src/data/footer.md"
+        label: "Footer"
+        name: "footer"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "footer",
+            }
+          - {
+              label: links,
+              name: links,
+              widget: list,
+              fields:
+                [
+                  { label: URL, name: url, widget: string },
+                  { label: Text, name: text, widget: string },
+                ],
+            }

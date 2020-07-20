@@ -1,0 +1,75 @@
+// Colors
+$black: #2D2D2D;
+$white: #F8F8F8;
+$grey: #5F646B;
+$gold: #E7DE92;
+
+$theme-colors: (
+  "black": $black,
+  "white": $white,
+  "grey": $grey,
+  "gold": $gold,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1710px,
+);
+
+// Spacing
+$spacers: (
+  0: 0,
+  1: (
+    $spacer * 0.938,
+  ),
+  // 15
+    2:
+    (
+      $spacer * 1.25,
+    ),
+  // 20
+    3:
+    (
+      $spacer * 1.875,
+    ),
+  // 30
+    4:
+    (
+      $spacer * 3.75,
+    ),
+    // 60
+    5:
+    (
+      $spacer * 5.625,
+    )
+    // 90
+);
+
+$spacer-100: 6.25rem;
+$spacer-200: 12.5rem;
+
+// Body
+$body-bg: #fff;
+$body-color: $black;
+
+// Links
+$link-color: $black;
+$link-hover-decoration: none;
+$link-hover-color: $grey;
+
+// Typography
+$font-family-base: "Inter", sans-serif;
+$font-family-title: 'Bebas Neue', cursive;
+$font-weight-normal: 300;
+$font-weight-base: $font-weight-normal;
+
+$h1-font-size: 2rem; // 32
+$h2-font-size: 1.75rem; // 28
+$h3-font-size: 1.75rem; // 28
+$h6-font-size: 0.750rem; // 12
+
+$headings-font-weight: 400;
+$headings-color: $black;

@@ -1,0 +1,32 @@
+// Required Bootstrap imports
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "variables";
+
+// Optional Bootstrap imports
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// Custom files
+@import "typography";
+@import "links";
+@import "header";
+@import "footer";
+@import "hero";
+@import "prices";
+
+.logo {
+  width: 45px;
+}
+
+.contact-links {
+  img {
+    width: 20px;
+    margin-right: 0.625rem;
+  }
+}

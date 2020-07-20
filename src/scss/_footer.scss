@@ -1,0 +1,5 @@
+@import '/variables';
+
+footer {
+    margin-top: #{map-get($spacers, 5)};
+}
